@@ -1,0 +1,11 @@
+body {
+
+    /* background of the color of the website, light blue */
+    background-color: rgb(28, 147, 186);
+  }
+  
+  h1 {
+    /* color of heading 1, navy blue */
+    color: rgb(67, 67, 116);
+    margin-left: 20px;
+  }
