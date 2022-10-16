@@ -1,11 +1,47 @@
 body {
 
-    /* background of the color of the website, light blue */
-    background-color: rgb(28, 147, 186);
-  }
+  /* background of the color of the website, light blue */
+  background-color: lightblue;
+
+}
+
+title {
+
+  color: rgba(red, green, blue, 1);
+
+}
   
-  h1 {
-    /* color of heading 1, navy blue */
-    color: rgb(67, 67, 116);
-    margin-left: 20px;
-  }
+h1 {
+
+  /* color of heading 1, navy blue */
+  color: rgb(67, 67, 116);
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+}
+
+h2 {
+
+  color: #f21
+
+
+
+}
+
+dl {
+
+  color: hsl(red,green,blue);
+
+
+}
+
+p {
+
+  color: hsla(red, green, orange, 1);
+
+
+}
+
+
