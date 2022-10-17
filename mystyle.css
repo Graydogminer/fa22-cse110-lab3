@@ -1,33 +1,56 @@
+/* Body of website */
 body {
 
   /* background of the color of the website, light blue */
   background-color: lightblue;
+  /* font for website */
+  font-family: 'Roboto', sans-serif;
 
 }
 
+/* Class Selector */
 .container {
 
-  display: grid;
-
-}
-
-.flex-container {
   /* creating a flex layout context */
   display: flex;
 
+  /* wrapping behavior */
   flex-flow: row wrap;
-
+  
   /* elements are evenly distributed with equal space */
   justify-content: space-around;
 
 }
 
+* {
+
+  display: grid;
+  max-width: 50px;
+
+}
+
+#unique {
+
+  padding: 50px 50px 50px 50px;
+
+}
+
+/* Attribute Selector - HTTPS */
+a[href^="https"] {
+
+  /* max width of anything with https */
+  max-width: 50px;
+
+}
+
+/* A Media Query */
 @media (max-width: 1250px) {
 
   /* Media Query */
 
 }
 
+/* Title */
 title {
 
   /* color of title */
@@ -35,6 +58,7 @@ title {
 
 }
 
+/* Pseudo-class Selector - Button */
 button:hover {
 
   /* color of the button */
@@ -42,13 +66,15 @@ button:hover {
 
 }
 
+/* Pseudo-class Selector - Header 1 */
 h1:active {
 
   /* background color of heading 1 */
   background-color: orangered;
 
 }
-  
+
+/* Header 1 */  
 h1 {
 
   /* color of heading 1, navy blue */
@@ -84,6 +110,7 @@ h1 {
 
 }
 
+/* Header 2 */
 h2 {
 
   /* color of heading 2, red */
@@ -118,42 +145,102 @@ h2 {
 
 }
 
+/* Description */
 dl {
 
+  /* color of description */
   color: hsl(red,green,blue);
   
+  /* creating border for description */
   border: 1px solid black;
   
+  /* creating padding for description */
   padding-top: 50px;
   padding-left: 50px;
   padding-bottom: 50px;
   padding-right: 50px;
 
+  /* creating border for description */
   border-width: 1px;
   border-style: solid;
   border-color: black;
   border-radius: 10px;
 
+  /* max width for description */
   max-width: 500px;
 
+  /* description display is inline-block */
   display: inline-block;
 
 }
 
+/* Paragraph */
 p {
 
+  /* color of paragraph */
   color: hsla(red, green, orange, 1);
   
+  /* creating a border for paragraph */
   border: 1px solid black;
   
+  /* creating padding for paragraph */
   padding: 50px 50px 50px 50px;
 
+  /* creating margin for paragraph */
   margin: 20px 20px 20px 20px;
 
+  /* text will be centered */
   text-align: center;
 
+  /* paragraph display is inline */
   display: inline;
 
 }
 
+/* Selector List - h1 and p */
+h1, p {
 
+  /* creating padding */
+  padding: 50px 50px 50px 50px;
+
+}
+
+/* Descendant Combinator - h1 and p */
+h1 p {
+
+/* text will be centered */
+text-align: center;
+
+}
+
+/* Child Combinator - h1 and p */
+h1 > p {
+
+  /* creating margins */
+  margin: 20px 20px 20px 20px;
+
+}
+
+/* General sibling combinator - h1 and p */
+h1 ~ p {
+
+  /* creating padding */
+  padding: 50px 50px 50px 50px;
+
+}
+
+/* Adjacent sibling combinator - h1 and p */
+h1 + p {
+
+  /* creating border */
+  border: 1px solid black;
+
+}
+
+/* Combining Two Selectors - h1 and p */
+h1.container {
+
+  /* the color of the two elements */
+  color: green;
+
+}
