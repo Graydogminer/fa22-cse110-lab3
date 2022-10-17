@@ -5,9 +5,47 @@ body {
 
 }
 
+.container {
+
+  display: grid;
+
+}
+
+.flex-container {
+  /* creating a flex layout context */
+  display: flex;
+
+  flex-flow: row wrap;
+
+  /* elements are evenly distributed with equal space */
+  justify-content: space-around;
+
+}
+
+@media (max-width: 1250px) {
+
+  /* Media Query */
+
+}
+
 title {
 
+  /* color of title */
   color: rgba(red, green, blue, 1);
+
+}
+
+button:hover {
+
+  /* color of the button */
+  color: yellowgreen;
+
+}
+
+h1:active {
+
+  /* background color of heading 1 */
+  background-color: orangered;
 
 }
   
@@ -15,31 +53,106 @@ h1 {
 
   /* color of heading 1, navy blue */
   color: rgb(67, 67, 116);
+
+  /* creating border for heading 1 */
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+
+  /* creating margin for heading 1 */
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
 
+  /* creating border for heading 1 */
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+
+  /* creating padding for heading 1 */
+  padding: 50px 50px 50px 50px;
+
+  /* width and height of heading 1 */
+  width: 300px;
+  height: 100px;
+
+  /* heading 1 position is static */
+  position: static;
+
 }
 
 h2 {
 
+  /* color of heading 2, red */
   color: #f21;
-  margin: 20px 20px 20px 20px;
+
+  /* text will have a blue underline */
+  text-decoration: underline blue;
+  
+  /* creating margin for heading 2 */
+  margin: 20px 20px 20px auto;
+
+  /* creating padding for heading 2 */
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
+
+  /* creating border for heading 2 */
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+
+  /* the minimum width of heading 2 */
+  min-width: 500px;
+
+  /* heading 2 position is sticky */
+  position: sticky;
+
+  /* heading 2 display is flex */
+  display: flex;
 
 }
 
 dl {
 
   color: hsl(red,green,blue);
+  
+  border: 1px solid black;
+  
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-right: 50px;
 
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+
+  max-width: 500px;
+
+  display: inline-block;
 
 }
 
 p {
 
   color: hsla(red, green, orange, 1);
+  
+  border: 1px solid black;
+  
+  padding: 50px 50px 50px 50px;
 
+  margin: 20px 20px 20px 20px;
+
+  text-align: center;
+
+  display: inline;
 
 }
 
