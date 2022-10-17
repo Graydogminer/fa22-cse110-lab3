@@ -6,7 +6,7 @@ What did do yesterday?
 What am I working on today?
 - Deciding which location to start Transit adventure
 What issues are blocking me?
-- So much locations to choose from
+- So much locations to choose from in SD
 
 ## Ronald Mcdonalds
 What did do yesterday?
